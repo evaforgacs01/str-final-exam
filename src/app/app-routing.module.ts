@@ -9,6 +9,10 @@ const routes: Routes = [
     component: UserListComponent,
   },
   {
+    path: 'user',
+    component: UserEditorComponent,
+  },
+  {
     path: 'user/:id',
     component: UserEditorComponent,
   },
@@ -20,6 +24,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
